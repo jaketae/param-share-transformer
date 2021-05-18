@@ -35,7 +35,7 @@ ParameterSharedTransformerEncoder(
 
 ## Usage
 
-You can check which layer is being used in each forward pass by toggling the `verbose` argument in the forward pass.
+You can check which layer is being used in each forward pass by toggling the `verbose` argument in the forward pass. By default `verbose` is set to `False`.
 
 ### Cycle Reverse
 
@@ -58,7 +58,7 @@ torch.Size([8, 100, 512])
 
 The layers are "sandwiched" in the sense that the first layer is called again as the final layer; the second layer, the second to last, and so on.
 
-## Cycle Mode
+### Cycle Mode
 
 If the model is initialized in cycle mode, each layer is called again only after all preceding unique layers have been consumed.
 
@@ -75,7 +75,7 @@ layer 2
 torch.Size([8, 100, 512])
 ```
 
-## Sequence Mode
+### Sequence Mode
 
 In sequence mode, the model simply repeatedly calls a layer until moving onto the next in a sequential fashion.
 
@@ -91,6 +91,6 @@ layer 2
 torch.Size([8, 100, 512])
 ```
 
-## Reference
+## Resources
 
 - [Original Paper](https://arxiv.org/abs/2104.06022v1)
