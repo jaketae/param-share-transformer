@@ -95,9 +95,7 @@ torch.Size([8, 100, 512])
 
 ## Summary
 
-The authors present three strategies for performing weight sharing on Transformer models: sequence, cycle, and cycle (rev).
-
-We propose a parameter sharing method for Transformers (Vaswani et al., 2017). The proposed approach relaxes a widely used technique, which shares parameters for one layer with all layers such as Universal Transformers (Dehghani et al., 2019), to increase the efficiency in the computational time. We propose three strategies: Sequence, Cycle, and Cycle (rev) to assign parameters to each layer. Experimental results show that the proposed strategies are efficient in the parameter size and computational time. Moreover, we indicate that the proposed strategies are also effective in the configuration where we use many training data such as the recent WMT competition.
+The authors present three strategies for performing weight sharing on Transformer models: sequence, cycle, and cycle (rev). These strategies are distinct from other parameter sharing schemes that typically assign the same weights to all model sublayers. Parameter shared transformers achieve SOTA performance on the [WMT 2014 dataset](https://paperswithcode.com/dataset/wmt-2014) while significantly saving computation cost.
 
 ## Resources
 
