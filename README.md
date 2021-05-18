@@ -37,7 +37,7 @@ ParameterSharedTransformerEncoder(
 
 ## Usage
 
-You can check which layer is being used in each forward pass by toggling the `verbose` argument in the forward pass. By default `verbose` is set to `False`.
+You can check which layer is being used in each forward pass by toggling the `verbose` argument in the forward pass. By default `verbose` is set to `False`. Also note that layer indicies are zero-indexed.
 
 ### Cycle Reverse
 
