@@ -67,7 +67,6 @@ If the model is initialized in cycle mode, each layer is called again only after
 ```python
 >>> model = ParameterSharedTransformerEncoder(mode="cycle")
 >>> model(x, verbose=True).shape
->>> model(x, verbose=True).shape
 layer 0
 layer 1
 layer 2
