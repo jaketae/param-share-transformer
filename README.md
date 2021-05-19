@@ -14,7 +14,7 @@ git clone https://github.com/jaketae/param-share-transformer.git
 
 Navigate to the cloned directory. You can start using the model via
 
-```
+```python
 >>> from pshare_transformer import ParameterSharedTransformerEncoder
 >>> model = ParameterSharedTransformerEncoder()
 ```
@@ -37,11 +37,11 @@ ParameterSharedTransformerEncoder(
 
 ## Usage
 
-You can check which layer is being used in each forward pass by toggling the `verbose` argument in the forward pass. By default `verbose` is set to `False`. Also note that layer indicies are zero-indexed.
+You can check which layer is being used in each forward pass by toggling the `verbose` argument. By default, `verbose` is set to `False`. Also note that layer indicies are zero-indexed.
 
 ### Cycle Reverse
 
-Below is a simple demonstration of the model's behavior when initialized in cycle reverse mode.
+Below is a simple demonstration of the model's behavior when initialized in cycle reverse mode, which is the default configuration.
 
 ```python
 >>> import torch
